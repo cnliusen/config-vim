@@ -56,10 +56,6 @@ endif
 set encoding=utf-8
 let g:Powerline_symbols='unicode'
 
-" for remote
-set directory=~/tmp
-set backupdir=~/tmp
-
 " Nerd Tree
 nmap <C-n> :NERDTreeToggle<CR>
 
