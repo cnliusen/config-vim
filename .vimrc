@@ -31,6 +31,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'flazz/vim-colorschemes'
 
 if has('gui_running')
   Bundle 'Valloric/YouCompleteMe'
@@ -101,22 +102,6 @@ highlight BadWhitespace ctermbg=red guibg=darkred
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 """""""""""""""""""""""""""""""""""""""""""""""
-" Color Scheme
-"""""""""""""""""""""""""""""""""""""""""""""""
-if has('gui_running')
-  set background=dark
-  colorscheme solarized
-else
-  let g:solarized_termcolors=256
-  syntax enable
-  set background=light
-  colorscheme solarized
-endif
-
-call togglebg#map("<F5>")
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""
 " Indentation
 """""""""""""""""""""""""""""""""""""""""""""""
 filetype plugin indent on
@@ -126,3 +111,9 @@ set tabstop=4
 set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
+
+"""""""""""""""""""""""""""""""""""""""""""""""
+" Color Scheme
+"""""""""""""""""""""""""""""""""""""""""""""""
+set background=dark
+colorscheme solarized
