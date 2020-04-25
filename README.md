@@ -16,3 +16,11 @@ sh ~/.vim_runtime/install_basic_vimrc.sh
 ```bash
 curl https://raw.githubusercontent.com/cnliusen/config-vim/master/my_configs.vim > ~/.vim_runtime/my_configs.vim
 ```
+
+## Install plugins
+
+* vim-markdown-preview
+```bash
+brew install grip
+git clone git@github.com:JamshedVesuna/vim-markdown-preview.git ~/.vim_runtime/my_plugins/
+```
